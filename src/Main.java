@@ -10,17 +10,17 @@ public class Main {
          * copying chars from it to Characters array
          */
         char[] chars = new Scanner(System.in).nextLine().toCharArray();
-        Character[] characters = new Character[chars.length];
-        for (int i = 0; i < characters.length; i++) {
-            characters[i] = (Character) chars[i];
-        }
+//        Character[] characters = new Character[chars.length];
+//        for (int i = 0; i < characters.length; i++) {
+//            characters[i] = (Character) chars[i];
+//        }
 
         /**
          * Creating the map<>.
          * Filling the value of the map according by key
          */
         Map<Character,Integer> map = new HashMap<>();
-        for (Character c : characters) {
+        for (char c : chars) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
 
