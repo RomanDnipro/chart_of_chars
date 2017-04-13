@@ -9,6 +9,7 @@ public class Main {
          * Getting the string from user,
          * copying chars from it to Characters array
          */
+        System.out.println("Enter any String do you want:");
         char[] chars = new Scanner(System.in).nextLine().toCharArray();
 //        Character[] characters = new Character[chars.length];
 //        for (int i = 0; i < characters.length; i++) {
@@ -24,6 +25,7 @@ public class Main {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
 
+        System.out.println("Quantity of characters:");
         for (Map.Entry entry : map.entrySet()){
             System.out.println(entry.getKey() + " : "
                     + entry.getValue());
